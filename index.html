@@ -3,15 +3,41 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>Title</title>
-      <!-- Reset CSS Sheet -->
-      <link rel="stylesheet" href="reset.css" type="text/css">
+      <title>Flex Layouts</title>
+  <!-- Reset CSS Sheet -->
+    <link rel="stylesheet" href="reset.css" type="text/css">
 
-      <!-- Custom Styles: Fonts, Any page specific styles, layout, colors -->
-      <link rel="stylesheet" href="main.css" type="text/css">
+  <!-- Custom Styles: Fonts, Any page specific styles, layout, colors -->
+    <link rel="stylesheet" href="main.css" type="text/css">
   </head>
 
   <body>
-    
+    <div class="overlay"></div>
+    <section class="main-wrapper">
+
+      <header class="main-header">
+        <div class="logo"></div>
+        <nav class="main-nav">
+                  <!-- We want to hdie these links on mobile -->
+          <ul>
+            <li>About</li>
+            <li>Tour</li>
+            <li>Pricing</li>
+            <li>Blog</li>
+            <li>Contact</li>
+          </ul>
+        </nav>
+                  <!-- We will show this HAM on mobile -->
+        <img class="ham" src="img/HAM.png" alt="Menu Button">
+                  <!-- Hide sign up on mobile -->
+        <button class="header-cta" type="button">Sign Up</button>
+      </header>
+
+        <h1 class="content">A Day in the Life of Thor</h1>
+      <button class="walk-cta">Let's go for a walk</button>
+
+    </section>
+
   </body>
+
 </html>

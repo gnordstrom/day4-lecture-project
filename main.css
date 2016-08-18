@@ -1,3 +1,153 @@
-body {
-  background-color: black;
+@import 'https://fonts.googleapis.com/css?family=Playfair+Display:700';
+
+.main-wrapper {
+  background: url('https://hd.unsplash.com/photo-1457144759132-40d119c2f120') no-repeat center;
+  display: flex;
+  background-size: cover;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
 }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: black;
+  z-index: 1;
+  opacity: 0.3;
+}
+
+.main-header {
+  height: 65px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  background: rgba(255, 255, 255, 0.8);
+  z-index: 2;
+
+}
+
+
+/* Always show logo*/
+.logo {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: #000;
+}
+
+/* Hiding main nav on mobile*/
+.main-nav {
+  display: none;
+}
+
+.main-nav ul {
+  display: flex;
+  width: 300px;
+  justify-content: space-around;
+  color: white;
+  font-family: 'Playfair Display', serif;
+}
+
+/* Hiding sign up on mobile*/
+.header-cta {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  background: #fff;
+  color: #242424;
+  border: none;
+  border-radius: 25px;
+  min-width: 175px;
+  cursor: pointer;
+}
+
+.header-cta:hover {
+  color: black;
+}
+
+.header-cta:focus {
+  outline: none;
+}
+
+.ham {
+  width: 40px;
+  height: 25px;
+}
+
+.content {
+  z-index: 3;
+  color: white;
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  align-self: center;
+  text-align: center;
+}
+
+.walk-cta {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  background: steelblue;
+  color: white;
+  text-align: center;
+  z-index: 3;
+  border: none;
+  outline: none;
+  font-size: 1.3rem;
+
+}
+
+@media(min-width: 768px) {
+  /* This will hide the menu when screen is larger than 700px */
+  .ham {
+    display: none;
+  }
+  .main-nav {
+    display: flex;
+  }
+  .header-cta {
+    display: flex;
+  }
+  .main-header {
+    background: steelblue;
+  }
+}
+
+
+@media(min-width: 924px) {
+
+}
+
+@media(min-width: 1100px)
+
+
+
+
+
+
+
+
+/* Make header red whenever goes over 900px
+@media(min-width: 900px) {
+  .main-header {
+    background: red;
+  }
+}
+*/
+
+
+/* Make header steelblue whenever goes over 1200px
+@media(min-width: 1200px) {
+  .main-header {
+    background: steelblue;
+  }
+}
+*/
